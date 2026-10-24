@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Bilingual EN/VI website template for kids&#x27; English centers in Vietnam | Yaylish – Kitepond Studio</title>
-<meta name="description" content="Yaylish: HTML + Tailwind website template for kids&#x27; English centers in Vietnam – 7 pages, English/Vietnamese switch, Zalo button, tuition table, free-trial form. See the demo and buy on Gumroad.">
+<title>Yaylish – Bilingual Website Template for Kids&#x27; English Centers</title>
+<meta name="description" content="Yaylish: HTML + Tailwind website template for kids&#x27; English centers in Vietnam – 7 pages, EN/VI switch, Zalo button, tuition table, trial form. Demo + Gumroad.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://kitepond.github.io/en/">
 <link rel="alternate" hreflang="vi" href="https://kitepond.github.io/">
@@ -35,6 +35,13 @@
   "@type": "Product",
   "name": "Yaylish – Kids' English Center Website Template (EN/VI)",
   "description": "Bilingual English/Vietnamese HTML + Tailwind website template for kids' English centers and after-school programs in Vietnam: 7 pages, Zalo/Messenger buttons, tuition table with VietQR block, free-trial form.",
+  "image": "https://kitepond.github.io/img/og-image.jpg",
+  "brand": {
+    "@type": "Brand",
+    "name": "Kitepond Studio"
+  },
+  "sku": "yaylish-1.0.2",
+  "url": "https://kitepond.github.io/en/",
   "offers": [
     {
       "@type": "Offer",
@@ -93,7 +100,7 @@
 <div class="wrap">
 <h2>A look at the pages</h2>
 <p>First-screen captures of the demo pages (all content is placeholder data).</p>
-<div class="gallery"><figure><img src="/img/index-en.webp" width="1000" height="694" loading="lazy" decoding="async" alt="Yaylish template home page in English: large headline, free-trial button and key numbers"><figcaption>Home</figcaption></figure><figure><img src="/img/tuition-en.webp" width="1000" height="694" loading="lazy" decoding="async" alt="Yaylish tuition page: monthly tuition table for five levels with a Monthly / Term / 6-month package toggle"><figcaption>Tuition</figcaption></figure><figure><img src="/img/schedule-en.webp" width="1000" height="694" loading="lazy" decoding="async" alt="Yaylish schedule page: weekly class timetable with level filter chips"><figcaption>Schedule</figcaption></figure><figure><img src="/img/book-trial-en.webp" width="520" height="501" loading="lazy" decoding="async" alt="Yaylish free-trial booking page on a phone: multi-step sign-up form"><figcaption>Book a free trial (mobile)</figcaption></figure></div>
+<div class="gallery"><figure><img src="/img/index-en.webp" width="1000" height="694" loading="lazy" decoding="async" alt="Yaylish template home page in English: large headline, free-trial button and key numbers"><figcaption>Home</figcaption></figure><figure><img src="/img/tuition-en.webp" width="1000" height="694" loading="lazy" decoding="async" alt="Yaylish tuition page: monthly tuition table for five levels with a Monthly / Term / 6-month package toggle"><figcaption>Tuition</figcaption></figure><figure><img src="/img/schedule-en.webp" width="1000" height="694" loading="lazy" decoding="async" alt="Yaylish schedule page: weekly class timetable with level filter chips"><figcaption>Schedule</figcaption></figure><figure><img src="/img/book-trial-en.webp" width="520" height="1000" loading="lazy" decoding="async" alt="Yaylish free-trial booking page on a phone: multi-step sign-up form"><figcaption>Book a free trial (mobile)</figcaption></figure></div>
 </div>
 </section>
 <section id="pricing" class="sec">
@@ -119,6 +126,12 @@
 <details><summary>Do I need to know how to code?</summary><p>No. Open <code>site.config.js</code> in any text editor, change the name, phone, Zalo, email, address and prices, then upload the folder to a host. Node.js is optional (only to rebuild the CSS).</p></details><details><summary>Does it really include Vietnamese – not just English?</summary><p>Yes. Every page has English and Vietnamese text, with an EN / VI switch that remembers the visitor's choice. The Vietnamese is written to read naturally; still have a native speaker review your final wording.</p></details><details><summary>Will Google index my Vietnamese pages?</summary><p>The language switch runs in the browser, so search engines index the English text baked into the HTML. If Vietnamese organic search matters most, set <code>language.default: "vi"</code> and bake Vietnamese into the HTML (the docs show how), or make a separate Vietnamese copy. This is a known limitation, not a bug.</p></details><details><summary>Does the booking form send me emails?</summary><p>Not until you connect it. By default it validates and shows a "demo mode" panel. Connect Formspree, Netlify Forms or any custom endpoint (Make, Zapier, Google Apps Script…) in <code>site.config.js</code>. Submit a real test before going live.</p></details><details><summary>Is there a payment gateway?</summary><p>No. The tuition page has a bank-transfer / VietQR information block with copy buttons; you supply your bank details and QR image. Nothing is processed on the site.</p></details><details><summary>Which hosting works?</summary><p>Any static host: shared hosting/cPanel, Netlify, Cloudflare Pages, Vercel, GitHub Pages, S3. Upload the contents of the <code>yaylish-html</code> folder (not the zip).</p></details><details><summary>Can I change colors, fonts and the logo?</summary><p>Yes – colors, fonts and brand are in <code>site.config.js</code>; the logo and favicon are SVG files you can replace. The included fonts cover Vietnamese diacritics; if you swap fonts, pick ones with a Vietnamese subset.</p></details><details><summary>Can I add a third language or remove one?</summary><p>Yes. Copy <code>assets/i18n/vi.js</code> to a new file, translate the values and add it to <code>language.available</code>. The docs have a worked example.</p></details><details><summary>What about the Framer files?</summary><p>The Framer package is a bridge, not a finished Framer template: design tokens, three code components (language switch, tuition table, timetable) and an assembly guide. It passes a strict type-check and a render test, but <strong>has not been opened inside Framer</strong> yet. Expect to rebuild the page layouts visually.</p></details><details><summary>Is the content real?</summary><p>No. Teachers, parent quotes, tuition, timetable, addresses and bank details are labelled sample data. Replace them before going live (a go-live checklist is included) – never publish sample testimonials as real.</p></details><details><summary>Can I use "Cambridge", "Starters / Movers / Flyers" or "IELTS" on my site?</summary><p>The template uses generic level names as examples. Only use exam names, logos or "exam center / preparation" claims if your center is actually entitled to. The template is not affiliated with or endorsed by Cambridge, the IELTS owners, Zalo, Meta or VietQR/NAPAS.</p></details><details><summary>Can I use one license for several client sites?</summary><p>The Single site license covers one website (yours or one client's). To build for multiple clients, buy the <strong>Agency license (1.990.000 ₫)</strong>.</p></details><details><summary>Can I resell the template or put it on GitHub / another marketplace?</summary><p>No – neither license allows reselling, redistributing or publishing the template files as a stand-alone product (including public repos and other marketplaces). Building websites for clients is fine under the right license.</p></details><details><summary>What support do I get?</summary><p>Email support for getting the files to work as documented (setup, config, form hookup, deploy) and bug fixes for the 1.x line, with free 1.x updates. Custom design, writing your content, hosting setup for you or building new features is not included.</p></details><details><summary>What if it doesn't work?</summary><p>Email <a href="mailto:kitepondstudio@proton.me">kitepondstudio@proton.me</a> within 14 days. If the files don't work as documented we'll fix it or refund you.</p></details><details><summary>Why "Yaylish"?</summary><p>It's a coined name (a cheerful "yay" + English) made by Kitepond Studio, and it's the template's name only – rename it to your center's brand in <code>site.config.js</code>. We did a public-web check for conflicting names; this is not a legal trademark clearance.</p></details><details><summary>Does it work by double-clicking index.html?</summary><p>Yes, it runs straight from your disk for previewing.</p></details><details><summary>Will there be updates?</summary><p>The current version is v1.0.2; <code>CHANGELOG.md</code> in the package tracks versions. Buyers get 1.x updates through Gumroad's library. No promise of new features on a schedule.</p></details>
 </div>
 </section>
+<section class="sec alt">
+<div class="wrap narrow">
+<h2>Read more</h2>
+<ul class="related"><li><a href="/en/kids-english-center-website-template/">Website template for kids&#x27; English centers</a></li><li><a href="/en/after-school-program-website-template-html/">HTML website template for after-school programs and tutoring centers</a></li><li><a href="/en/bilingual-website-template/">Bilingual HTML + Tailwind website template with an EN/VI switch</a></li><li><a href="/en/blog/bilingual-static-site-seo-hreflang/">Why our language switch alone does not give you Vietnamese SEO</a></li></ul>
+</div>
+</section>
 <section class="sec final">
 <div class="wrap">
 <h2>Ready to try it?</h2>
@@ -133,6 +146,7 @@
 <footer class="foot">
 <div class="wrap">
 <p>© 2026 Kitepond Studio · Support: <a href="mailto:kitepondstudio@proton.me">kitepondstudio@proton.me</a> · <a href="/" hreflang="vi" lang="vi">Tiếng Việt</a></p>
+<p class="foot-links"><a href="/en/kids-english-center-website-template/">Kids&#x27; English center template</a> · <a href="/en/after-school-program-website-template-html/">After-school program template</a> · <a href="/en/bilingual-website-template/">Bilingual website template</a> · <a href="/en/blog/bilingual-static-site-seo-hreflang/">Bilingual static site SEO</a></p>
 <p><strong>Privacy:</strong> This page collects no personal data, sets no cookies and has no trackers or ads. It is hosted on GitHub Pages, so GitHub may keep technical access logs under its own policy. Links to Gumroad and the demo site lead to third-party services; if you email us, your address is used only to reply.</p>
 <p>Yaylish is a Kitepond Studio template. Not affiliated with Cambridge, IELTS, Zalo, Meta or VietQR/NAPAS.</p>
 </div>

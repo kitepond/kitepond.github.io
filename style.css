@@ -68,3 +68,23 @@ details p{margin:0 0 .9rem}
  .ticks{grid-template-columns:repeat(2,1fr);gap:.8rem 1.5rem}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+.crumbs{font-size:.88rem;margin:0 0 .6rem;color:#4a5080}
+.crumbs a{color:#2b3a9e}
+.narrow-hero{max-width:52rem}
+.top nav a[aria-current="page"]{background:#e8ebfb}
+.prose{max-width:50rem}
+.prose h2{margin-top:2rem}
+.prose ul,.prose ol{padding-left:1.3rem;margin:.6rem 0 1rem}
+.prose li{margin:.35rem 0}
+.prose ul.notes{padding-left:0;margin:.6rem 0 1rem}
+.prose .gallery{margin:1rem 0}
+.prose pre{background:#1f2547;color:#e6e8fb;padding:1rem;border-radius:.6rem;overflow-x:auto;font-size:.85rem;line-height:1.5}
+.prose pre code{background:none;padding:0;color:inherit}
+.tblwrap{overflow-x:auto;margin:.8rem 0 1.2rem}
+.tbl{border-collapse:collapse;width:100%;min-width:30rem;background:#fff;font-size:.96rem}
+.tbl th,.tbl td{border:1px solid #dcdff3;padding:.55rem .75rem;text-align:left;vertical-align:top}
+.tbl th{background:#e8ebfb;color:#1f2a6b}
+.related{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
+.related a{font-weight:700}
+.foot-links{line-height:2}
+.foot-links a{margin-right:.2rem}

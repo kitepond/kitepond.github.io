@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bilingual static site SEO: hreflang EN/VI | Kitepond Studio</title>
+<meta name="description" content="Why a client-side language switch is not indexed, and how to publish static /en/ and /vi/ pages with canonical and hreflang tags on GitHub Pages.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://kitepond.github.io/en/blog/bilingual-static-site-seo-hreflang/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#2b3a9e">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Kitepond Studio">
+<meta property="og:title" content="Bilingual static site SEO: hreflang EN/VI | Kitepond Studio">
+<meta property="og:description" content="Why a client-side language switch is not indexed, and how to publish static /en/ and /vi/ pages with canonical and hreflang tags on GitHub Pages.">
+<meta property="og:url" content="https://kitepond.github.io/en/blog/bilingual-static-site-seo-hreflang/">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://kitepond.github.io/img/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:image:alt" content="Yaylish template on desktop and phone: the bilingual home page of a kids&#x27; English center">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Bilingual static site SEO: hreflang EN/VI | Kitepond Studio">
+<meta name="twitter:description" content="Why a client-side language switch is not indexed, and how to publish static /en/ and /vi/ pages with canonical and hreflang tags on GitHub Pages.">
+<meta name="twitter:image" content="https://kitepond.github.io/img/og-image.jpg">
+<meta name="twitter:image:alt" content="Yaylish template on desktop and phone: the bilingual home page of a kids&#x27; English center">
+<link rel="stylesheet" href="/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Why our language switch alone does not give you Vietnamese SEO",
+  "description": "Why a client-side language switch is not indexed, and how to publish static /en/ and /vi/ pages with canonical and hreflang tags on GitHub Pages.",
+  "inLanguage": "en",
+  "image": "https://kitepond.github.io/img/og-image.jpg",
+  "mainEntityOfPage": "https://kitepond.github.io/en/blog/bilingual-static-site-seo-hreflang/",
+  "datePublished": "2026-10-25",
+  "dateModified": "2026-10-25",
+  "author": {
+    "@type": "Organization",
+    "name": "Kitepond Studio",
+    "url": "https://kitepond.github.io/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Kitepond Studio",
+    "url": "https://kitepond.github.io/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Yaylish – Kitepond Studio",
+      "item": "https://kitepond.github.io/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Bilingual static site SEO",
+      "item": "https://kitepond.github.io/en/blog/bilingual-static-site-seo-hreflang/"
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+<div class="wrap bar">
+<a class="brand" href="/en/"><span class="logo" aria-hidden="true">Y</span> Yaylish</a>
+<nav aria-label="Main navigation"><a href="/en/kids-english-center-website-template/">Kids&#x27; English center template</a><a href="/en/after-school-program-website-template-html/">After-school program template</a><a href="/en/bilingual-website-template/">Bilingual website template</a><a href="/en/blog/bilingual-static-site-seo-hreflang/" aria-current="page">Bilingual static site SEO</a></nav>
+<a class="lang" href="/" hreflang="vi" lang="vi" aria-label="Xem trang này bằng tiếng Việt">VI</a>
+</div>
+</header>
+<main id="main">
+<section class="hero">
+<div class="wrap narrow-hero">
+<div>
+<nav class="crumbs" aria-label="Breadcrumb"><a href="/en/">Home</a> › <span>Bilingual static site SEO</span></nav>
+<h1>Why our language switch alone does not give you Vietnamese SEO</h1>
+<p class="lead">A browser-side EN/VI switch does not give a search engine a second language to index. Here is how separate static pages, canonical and hreflang fix that on GitHub Pages.</p>
+<p class="cta">
+<a class="btn primary" href="https://kitepond.github.io/yaylish-demo/">View the demo</a>
+<a class="btn" href="https://kitepond.gumroad.com/l/yaylish?utm_source=kitepond-site&utm_medium=landing&utm_campaign=launch-2026&utm_content=bilingual-static-site-seo-hreflang" rel="noopener">Buy on Gumroad</a>
+</p>
+<p class="small">Updated: 2026-10-25</p>
+</div>
+
+</div>
+</section>
+<section class="sec">
+<div class="wrap prose">
+<p>Short answer: a language switch that runs in the browser is not enough to make a second language show up in search. This post explains why and shows the pattern we use on this very site. It makes no claims about rankings.</p><h2>What a client-side language switch does</h2><p>The switch in our Yaylish template swaps the page text in the browser and remembers the choice in <code>localStorage</code>. The HTML file on the server never changes: it ships in one language, and everything else happens after the page loads, on one visitor's device.</p><h2>Why search engines only see one language</h2><p>A crawler fetches the URL and reads the HTML it receives. It does not click your language button and it does not share your browser's saved choice. So it reads the language the page ships with, and there is only one URL for both languages, so there is nothing separate to index for the other language.</p><h2>The fix: separate pre-rendered pages</h2><ol><li><strong>One URL per language.</strong> Each page has its own static HTML file with the text baked in. On GitHub Pages we cannot do server redirects, so we keep Vietnamese at the root and English under <code>/en/</code>.</li><li><strong>Self-referencing canonical.</strong> Each page's <code>rel="canonical"</code> points to its own URL.</li><li><strong>Reciprocal hreflang.</strong> Each page lists every language version, including itself, using absolute URLs. If page A points to page B, page B must point back to A.</li><li><strong>x-default.</strong> Name a fallback page for visitors whose language you do not target.</li><li><strong>Same set in the sitemap.</strong> List each URL and its alternates in <code>sitemap.xml</code>.</li></ol><h2>A worked example from this site</h2><p>Our landing pages are a Vietnamese page at <code>/</code> and an English page at <code>/en/</code>. The head of the English page contains:</p><pre><code>&lt;link rel=&quot;canonical&quot; href=&quot;https://kitepond.github.io/en/&quot;&gt;
+&lt;link rel=&quot;alternate&quot; hreflang=&quot;vi&quot; href=&quot;https://kitepond.github.io/&quot;&gt;
+&lt;link rel=&quot;alternate&quot; hreflang=&quot;en&quot; href=&quot;https://kitepond.github.io/en/&quot;&gt;
+&lt;link rel=&quot;alternate&quot; hreflang=&quot;x-default&quot; href=&quot;https://kitepond.github.io/&quot;&gt;</code></pre><p>The Vietnamese page carries the same three alternate lines and a canonical pointing to <code>https://kitepond.github.io/</code>. The same structure repeats for each page pair, for example <a href="/mau-website-trung-tam-tieng-anh/">the Vietnamese template page</a> and <a href="/en/kids-english-center-website-template/">its English counterpart</a>.</p><h2>A checklist</h2><ul><li>Every language has its own URL and its own baked-in HTML text</li><li><code>&lt;html lang&gt;</code> matches the page's language</li><li>Canonical points to the page itself, not to the other language</li><li>hreflang tags are reciprocal, absolute, and include the page itself</li><li>Sitemap lists all URLs; internal links connect the language pairs</li><li>A visible link lets visitors switch language (ours is the EN / VI button in the header)</li></ul><h2>Where Yaylish fits</h2><p>We make the <a href="/en/bilingual-website-template/">Yaylish bilingual template</a>. Its switch is client-side, so out of the box it shows the same limit described here; the docs explain how to bake in a default language or make a separate copy. If Vietnamese search traffic matters to you, plan for separate pages. This post is not legal or marketing advice, and results depend on your whole site.</p>
+</div>
+</section>
+<section class="sec alt"><div class="wrap narrow"><h2>Read next</h2><ul class="related"><li><a href="/en/bilingual-website-template/">Bilingual website template</a></li><li><a href="/en/kids-english-center-website-template/">Kids&#x27; English center template</a></li></ul></div></section>
+<section class="sec final"><div class="wrap"><h2>Look at the demo, then decide</h2><p>The demo uses sample data throughout. 14-day refund if the files don't work as documented – details on the Gumroad page.</p><p class="cta"><a class="btn primary" href="https://kitepond.github.io/yaylish-demo/">View the demo</a><a class="btn" href="https://kitepond.gumroad.com/l/yaylish?utm_source=kitepond-site&utm_medium=landing&utm_campaign=launch-2026&utm_content=bilingual-static-site-seo-hreflang" rel="noopener">Buy on Gumroad</a></p></div></section>
+</main>
+<footer class="foot">
+<div class="wrap">
+<p>© 2026 Kitepond Studio · Support: <a href="mailto:kitepondstudio@proton.me">kitepondstudio@proton.me</a> · <a href="/" hreflang="vi" lang="vi">Tiếng Việt</a></p>
+<p class="foot-links"><a href="/en/">Home</a> · <a href="/en/kids-english-center-website-template/">Kids&#x27; English center template</a> · <a href="/en/after-school-program-website-template-html/">After-school program template</a> · <a href="/en/bilingual-website-template/">Bilingual website template</a> · <a href="/en/blog/bilingual-static-site-seo-hreflang/">Bilingual static site SEO</a></p>
+<p><strong>Privacy:</strong> This page collects no personal data, sets no cookies and has no trackers or ads. It is hosted on GitHub Pages, so GitHub may keep technical access logs under its own policy. Links to Gumroad and the demo site lead to third-party services; if you email us, your address is used only to reply.</p>
+<p>Yaylish is a Kitepond Studio template. Not affiliated with Cambridge, IELTS, Zalo, Meta or VietQR/NAPAS.</p>
+</div>
+</footer>
+</body>
+</html>
