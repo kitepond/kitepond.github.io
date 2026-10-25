@@ -57,6 +57,20 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://kitepond.github.io/template-website-song-ngu-anh-viet/"/>
   </url>
   <url>
+    <loc>https://kitepond.github.io/mau-website-trung-tam-tieng-anh-tre-em/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kitepond.github.io/mau-website-trung-tam-tieng-anh-tre-em/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kitepond.github.io/en/kids-english-center-templates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kitepond.github.io/mau-website-trung-tam-tieng-anh-tre-em/"/>
+  </url>
+  <url>
+    <loc>https://kitepond.github.io/en/kids-english-center-templates/</loc>
+    <lastmod>2026-10-25</lastmod>
+    <xhtml:link rel="alternate" hreflang="vi" href="https://kitepond.github.io/mau-website-trung-tam-tieng-anh-tre-em/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://kitepond.github.io/en/kids-english-center-templates/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://kitepond.github.io/mau-website-trung-tam-tieng-anh-tre-em/"/>
+  </url>
+  <url>
     <loc>https://kitepond.github.io/blog/website-trung-tam-tieng-anh-can-co-gi/</loc>
     <lastmod>2026-10-25</lastmod>
   </url>
