@@ -114,3 +114,12 @@ details p{margin:0 0 .9rem}
 .prose.wide{max-width:68rem}
 .prose.wide>p,.prose.wide>ul,.prose.wide>ol,.prose.wide>h2,.prose.wide>h3{max-width:50rem}
 .prose.wide>.styles{max-width:none}
+.shopinfo{margin:1rem 0 0;max-width:50rem;display:grid;gap:.6rem}
+.shopinfo>div{background:#fff;border-left:4px solid #f9b928;padding:.7rem 1rem;border-radius:.5rem}
+.shopinfo dt{font-weight:700;color:#1f2a6b;margin:0 0 .15rem}
+.shopinfo dd{margin:0;overflow-wrap:anywhere}
+@media (min-width:48rem){
+ .shopinfo>div{display:grid;grid-template-columns:10rem 1fr;gap:1rem}
+ .shopinfo dt{margin:0}
+}
+.foot-contact{line-height:1.6}
