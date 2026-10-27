@@ -123,3 +123,23 @@ details p{margin:0 0 .9rem}
  .shopinfo dt{margin:0}
 }
 .foot-contact{line-height:1.6}
+/* ad landing page (VI catalog): price + CTAs above the fold, quick header links, price on cards, bigger footer tap targets */
+#styles,#gia,#lien-he{scroll-margin-top:4.5rem}
+.hero-price{margin:.9rem 0 0;font-size:1rem;line-height:1.5}
+.hero-price strong{font-size:1.2rem;color:#1f2a6b}
+.hero-price .small{display:inline-block;margin-top:.15rem}
+.hero-price+.cta{margin-top:.8rem}
+.card-price{margin:.5rem 0 0;line-height:1.35}
+.card-price strong{display:block;font-size:1.25rem;color:#1f2a6b}
+.card-price .small{display:block;font-size:.82rem}
+.top nav.quick{display:flex;gap:0;margin-left:auto;margin-right:.25rem}
+.top nav.quick a{display:inline-flex;align-items:center;min-height:44px;padding:0 .6rem;font-size:.95rem;font-weight:700;color:#2b3a9e;text-decoration:underline;text-underline-offset:3px}
+.foot a{display:inline-block;padding:.6rem 0}
+.foot-links{display:flex;flex-wrap:wrap;align-items:center;column-gap:.45rem;line-height:1.65}
+.foot-links a{margin-right:0;padding:.6rem .1rem}
+@media (max-width:22.5rem){
+ .bar{gap:.3rem}
+ .brand{font-size:1.05rem;gap:.35rem}
+ .top nav.quick a{padding:0 .4rem;font-size:.9rem}
+ .lang{min-width:2.4rem;padding:.4rem .5rem}
+}
