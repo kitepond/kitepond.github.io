@@ -150,3 +150,24 @@ details p{margin:0 0 .9rem}
  .top nav.quick a{padding:0 .35rem;font-size:.85rem}
  .lang{min-width:2.4rem;padding:.4rem .5rem;white-space:nowrap}
 }
+/* VI ad landing page: demo chips in the hero, payment note, price-section buy row, mobile sticky bar */
+html{scroll-padding-top:4.5rem}
+.vh{position:absolute!important;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.chips{display:flex;flex-wrap:wrap;gap:.5rem;margin:.7rem 0 0}
+.chip{display:inline-flex;align-items:center;gap:.45rem;min-height:44px;padding:0 .9rem 0 .6rem;border:2px solid #1f2a6b;border-radius:999px;background:#fff;color:#1f2a6b;font-weight:700;text-decoration:none;line-height:1.1}
+.chip:hover{background:#e8ebfb}
+.dot{width:1.15rem;height:1.15rem;border-radius:50%;flex:none;box-shadow:inset 0 0 0 1px rgba(0,0,0,.15)}
+.dot-yaylish{background:linear-gradient(135deg,#2b6fd6 50%,#f9b928 50%)}
+.dot-tinylish{background:linear-gradient(135deg,#9b7fd4 50%,#efe6ff 50%)}
+.dot-kitelish{background:linear-gradient(135deg,#14968c 50%,#f28c28 50%)}
+.dot-peachlish{background:linear-gradient(135deg,#c2603a 50%,#f7b996 50%)}
+.dot-cedarlish{background:linear-gradient(135deg,#1f4d3a 50%,#c9a24a 50%)}
+.chips+.hero-price{margin-top:.8rem}
+.paynote{margin:.5rem 0 0;font-size:.85rem;line-height:1.4;color:#4a5080}
+.buy-row{margin-top:.6rem}
+.stickybar,.sticky-spacer{display:none}
+@media (max-width:47.99rem){
+ .stickybar{display:flex;gap:.6rem;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:.5rem max(.8rem,env(safe-area-inset-right)) calc(.5rem + env(safe-area-inset-bottom)) max(.8rem,env(safe-area-inset-left));background:rgba(255,250,240,.97);border-top:1px solid #eadfc6;box-shadow:0 -2px 10px rgba(31,42,107,.08)}
+ .stickybar .btn{flex:1;display:flex;align-items:center;justify-content:center;min-height:48px;padding:.5rem 1rem;text-align:center}
+ .sticky-spacer{display:block;height:calc(4.25rem + env(safe-area-inset-bottom))}
+}
