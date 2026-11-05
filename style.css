@@ -173,3 +173,26 @@ html{scroll-padding-top:4.5rem}
 }
 /* ZALO20 promo line (VI catalog) -- remove after 2026-11-08 */
 .offer{margin:.6rem 0 0;padding:.5rem .75rem;border-radius:.6rem;background:#fff4d6;border:1px solid #f0c44c;color:#5a3d00;font-size:.95rem;line-height:1.45;font-weight:600}
+
+/* VI catalog: how-it-works, ask-before-buy, FAQ anchors, 3-btn sticky */
+#cach-hoat-dong,#faq{scroll-margin-top:4.5rem}
+.how{margin:1.6rem 0 1.2rem;padding:1.1rem 1rem 1.2rem;border:1px solid #dcdff3;border-radius:1rem;background:#fff}
+.how h2{margin-top:0}
+.how-steps{list-style:none;margin:0;padding:0;display:grid;gap:.9rem}
+.how-steps li{display:flex;gap:.75rem;align-items:flex-start}
+.how-n{flex:none;width:2rem;height:2rem;border-radius:50%;background:#2b3a9e;color:#fff;font-weight:800;display:flex;align-items:center;justify-content:center;line-height:1}
+.how-steps strong{display:block;margin-bottom:.2rem}
+.how-steps p{margin:0;color:#3a4060;font-size:.95rem;line-height:1.45}
+@media (min-width:48rem){
+ .how-steps{grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem}
+}
+.ask{margin:.45rem 0 0;font-size:.95rem}
+.ask a{font-weight:700;color:#2b3a9e;text-decoration:underline;text-underline-offset:3px}
+.ask-row{margin-top:.7rem}
+.hero-offer{margin:.55rem 0 0}
+@media (max-width:47.99rem){
+ .stickybar{gap:.35rem}
+ .stickybar .btn{padding:.45rem .4rem;font-size:.82rem;line-height:1.15}
+ .stickybar .ask-sticky{background:#fff;border:2px solid #2b3a9e;color:#2b3a9e}
+ .sticky-spacer{height:calc(4.6rem + env(safe-area-inset-bottom))}
+}
